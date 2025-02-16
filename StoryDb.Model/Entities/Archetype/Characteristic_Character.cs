@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StoryDb.Model.Entities.Character;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,9 +16,9 @@ namespace StoryDb.Model.Entities.Archetype
         public int Value { get; set; }
 
         // Навигационное свойство для связи с Characteristic
-        public Characteristic Characteristic { get; set; }
+        public Characteristic? Characteristic { get; set; }
 
         // Навигационное свойство для связи с Character
-        public StoryDb.Model.Entities.Character.Character Character { get; set; }
+        public CharacterI? CharacterI { get; set; }
     }
 }

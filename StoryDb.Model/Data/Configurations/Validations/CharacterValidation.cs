@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace StoryDb.Model.Data.Configurations.Validations
 {
-    public class CharacterValidation : IEntityTypeConfiguration<Character>
+    public class CharacterValidation : IEntityTypeConfiguration<CharacterI>
     {
-        public void Configure(EntityTypeBuilder<Character> builder)
+        public void Configure(EntityTypeBuilder<CharacterI> builder)
         {
             throw new NotImplementedException();
         }

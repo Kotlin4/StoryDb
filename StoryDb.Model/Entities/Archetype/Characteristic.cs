@@ -17,9 +17,9 @@ namespace StoryDb.Model.Entities.Archetype
         public int Default { get; set; }
 
         // Навигационное свойство для связи с Characteristic_Archetype
-        public ICollection<Characteristic_Archetype> Characteristic_Archetypes { get; set; } = new List<Characteristic_Archetype>();
+        public List<ArchetypeI> ArchetypeIs { get; set; } = [];
 
         // Навигационное свойство для связи с Characteristic_Character
-        public ICollection<Characteristic_Character> Characteristic_Characters { get; set;} = new List<Characteristic_Character>();
+        public List<Characteristic_Character> Characteristic_Characters { get; set; } = [];
     }
 }
