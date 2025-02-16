@@ -16,6 +16,13 @@ namespace StoryDb.Model.Entities.Character
         public int Min { get; set; }
         public int Max { get; set; }
         public int Default { get; set; }
+
+        // Навигационное свойство для связи с Characteristic_U_Type
+        public Characteristic_U_Type? Characteristic_U_Type { get; set; }
+
+        // Навигационное свойство для связи с CharacterI
+        public List<CharacterI> CharacterIs { get; set; } = [];
+
     }
-    
+
 }

@@ -12,5 +12,8 @@ namespace StoryDb.Model.Entities.Character
         public Guid Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
+
+        // Навигационное свойство для связи с Characteristic_U
+        public List<Characteristic_U> Characteristic_Us { get; set; } = [];
     }
 }
