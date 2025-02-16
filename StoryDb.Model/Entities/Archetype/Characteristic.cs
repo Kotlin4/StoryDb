@@ -15,5 +15,11 @@ namespace StoryDb.Model.Entities.Archetype
         public int Min {  get; set; }
         public int Max { get; set; }
         public int Default { get; set; }
+
+        // Навигационное свойство для связи с Characteristic_Archetype
+        public ICollection<Characteristic_Archetype> Characteristic_Archetypes { get; set; } = new List<Characteristic_Archetype>();
+
+        // Навигационное свойство для связи с Characteristic_Character
+        public ICollection<Characteristic_Character> Characteristic_Characters { get; set;} = new List<Characteristic_Character>();
     }
 }

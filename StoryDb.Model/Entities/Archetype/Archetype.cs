@@ -14,6 +14,12 @@ namespace StoryDb.Model.Entities.Archetype
         public string Name { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
         public int PARENT_ID { get; set; }
+
+        // Навигационное свойство для связи с Character_Archetype
+        public ICollection<Character_Archetype> Character_Archetype { get; set; } = new List<Character_Archetype>();
+
+        // Навигационное свойство для связи с Characteristic_Archetype
+        public ICollection<Characteristic_Archetype> Characteristic_Archetypes { get; set; } = new List<Characteristic_Archetype>();
     }
 }
 
