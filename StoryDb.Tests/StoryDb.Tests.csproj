@@ -18,6 +18,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\StoryDb.Model\StoryDb.Model.csproj" />
+    <ProjectReference Include="..\StoryDb.ViewModel\StoryDb.ViewModel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Using Include="NUnit.Framework" />
   </ItemGroup>
 
