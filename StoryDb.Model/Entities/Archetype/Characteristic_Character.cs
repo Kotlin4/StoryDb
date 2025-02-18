@@ -1,4 +1,5 @@
-﻿using StoryDb.Model.Entities.Character;
+﻿using StoryDb.Model.Data.Configurations.Tags;
+using StoryDb.Model.Entities.Character;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 namespace StoryDb.Model.Entities.Archetype
 {
     // Класс промежуточной таблицы присвоения значения характеристик персонажу с архетипом
-    public class Characteristic_Character
+    public class Characteristic_Character : IEntity
     {
         public Guid Id { get; set; }
         public int Characteristic_ID { get; set; }
