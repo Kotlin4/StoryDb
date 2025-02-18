@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StoryDb.Model.Data.Configurations.Tags;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace StoryDb.Model.Entities.Character
 {
-    public class Characteristic_U
+    public class Characteristic_U : IEntity
     {
         // Класс таблицы характеристик персонажа
         public Guid Id { get; set; }

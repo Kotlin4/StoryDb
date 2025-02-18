@@ -1,4 +1,5 @@
-﻿using StoryDb.Model.Entities.Character;
+﻿using StoryDb.Model.Data.Configurations.Tags;
+using StoryDb.Model.Entities.Character;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 namespace StoryDb.Model.Entities.Archetype
 {
     // Класс таблицы Архетипов
-    public class ArchetypeI
+    public class ArchetypeI : IEntity
     {
         public Guid Id { get; set; }
         public string Name { get; set; } = string.Empty;

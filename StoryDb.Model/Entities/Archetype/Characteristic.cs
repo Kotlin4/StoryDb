@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StoryDb.Model.Data.Configurations.Tags;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 namespace StoryDb.Model.Entities.Archetype
 {
     // Класс таблицы характеристик Архетипа
-    public class Characteristic
+    public class Characteristic : IEntity
     {
         public Guid Id { get; set; }
         public string Name { get; set; } = string.Empty;
